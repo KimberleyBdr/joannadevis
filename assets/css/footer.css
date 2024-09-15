@@ -1,0 +1,384 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+/* __________ FOOTER __________ */
+footer {
+    border-top: var(--primary-color) 1px solid;
+    padding: 0 300px;
+}
+
+/* __________ PART 1 __________ */
+.footPart1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resumePres .JoannaD {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 36px;
+    color: var(--base-color);
+}
+
+.resumePres .pres {
+    line-height: 1.8em;
+    font-weight: 200;
+    color: var(--base-color);
+}
+
+.resumePres {
+    width: 500px;
+}
+
+.coordonnee h5 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8em;
+    margin-top: 55px;
+    color: var(--base-color);
+}
+
+.coordonnee ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.coordonnee a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.coordonnee ul li {
+    padding: 2px;
+    font-weight: 200;
+    color: var(--base-color);
+}
+
+.reseau {
+    margin-top: 60px;
+}
+
+.reseau img {
+    width: 80px;
+    padding: 10px 20px;
+}
+
+/* __________ PART 2 __________ */
+.footpart2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 50px;
+}
+
+.fp1 p {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fp2 {
+    display: flex;
+    align-items: center;
+}
+
+.fp2 a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 40px;
+}
+
+/* __________ COOKIES __________ */
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--base-color);
+    border-top: 1px solid var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}
+
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 480px) {
+
+    /* __________ FOOTER __________ */
+    footer {
+        padding: 0 50px;
+    }
+
+    /* __________ PART 1 __________ */
+    .footPart1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resumePres .JoannaD {
+        font-size: 28px;
+    }
+
+    .resumePres .pres {
+        line-height: 1.5em;
+    }
+
+    .resumePres {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .coordonnee h5 {
+        margin-top: 20px;
+    }
+
+    .coordonnee ul {
+        text-align: center;
+    }
+
+    .reseau {
+        margin-top: 30px;
+    }
+
+    .reseau img {
+        width: 50px;
+        padding: 10px 15px;
+    }
+
+    /* __________ PART 2 __________ */
+    .footpart2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+
+    .footpart2 {
+        margin: 5px 0;
+    }
+
+    .fp2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fp1 p {
+        font-size: 16px;
+    }
+
+    .fp2 a {
+        margin: 5px 20px;
+        font-size: 16px;
+    }
+}
+
+/* __________ TABLET RESPONSIVE __________ */
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    /* __________ FOOTER __________ */
+    footer {
+        padding: 0 50px;
+    }
+
+    /* __________ PART 1 __________ */
+    .footPart1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resumePres .JoannaD {
+        font-size: 28px;
+    }
+
+    .resumePres .pres {
+        line-height: 1.5em;
+    }
+
+    .resumePres {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .coordonnee h5 {
+        margin-top: 40px;
+    }
+
+    .coordonnee ul {
+        text-align: center;
+    }
+
+    .reseau {
+        margin-top: 30px;
+    }
+
+    .reseau img {
+        width: 50px;
+        padding: 10px 15px;
+    }
+
+    .resPart1 {
+        display: inline-block;
+    }
+
+    /* __________ PART 2 __________ */
+    .footpart2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footpart2 {
+        margin: 5px 0;
+    }
+
+    .fp2 a {
+        margin: 5px 20px;
+    }
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    /* __________ Footer __________ */
+    footer {
+        padding: 0 100px;
+    }
+
+    /* __________ PART 1 __________ */
+    .resumePres .JoannaD {
+        font-size: 28px;
+    }
+
+    .resumePres .pres {
+        line-height: 1.5em;
+    }
+
+    .resumePres {
+        width: 350px;
+    }
+
+    .coordonnee h5 {
+        margin-top: 40px;
+    }
+
+    .reseau {
+        margin-top: 30px;
+    }
+
+    .reseau img {
+        width: 50px;
+        padding: 10px 15px;
+    }
+
+    .resPart1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* __________ PART 2 __________ */
+    .footpart2 {
+        margin: 0;
+    }
+
+    .fp2 a {
+        margin: 0 20px;
+    }
+}
+
+/* __________ LAPTOP RESPONSIVE __________ */
+@media screen and (min-width: 1025px) and (max-width:1600px) {
+
+    /* __________ FOOTER __________ */
+    footer {
+        padding: 0 200px;
+    }
+
+    /* __________ PART 1 __________ */
+    .resumePres .JoannaD {
+        font-size: 32px;
+    }
+
+    .resumePres .pres {
+        line-height: 1.8em;
+        font-weight: 200;
+    }
+
+    .resumePres {
+        width: 420px;
+    }
+
+    .coordonnee h5 {
+        margin-top: 50px;
+    }
+
+    .reseau img {
+        width: 70px;
+        padding: 10px 15px;
+    }
+
+    /* __________ PART 2 __________ */
+    .footpart2 {
+        margin: 10px 30px;
+    }
+
+    .fp2 a {
+        margin: 0 40px;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+    .resumePres .JoannaD {
+        font-size: 48px;
+    }
+
+    .resumePres .pres {
+        font-size: 24px;
+    }
+
+    .resumePres {
+        width: 600px;
+    }
+
+    .coordonnee h5 {
+        font-size: 32px;
+    }
+
+    .coordonnee ul {
+        list-style-type: none;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .coordonnee a {
+        font-size: 24px;
+    }
+
+    .coordonnee ul li {
+        padding: 4px;
+        font-weight: 200;
+        font-size: 24px;
+    }
+
+    .reseau {
+        margin-top: 120px;
+    }
+
+    .reseau img {
+        width: 120px;
+        padding: 10px 20px;
+    }
+
+    /* __________ PART 2 __________ */
+    .fp1 p {
+        font-size: 24px;
+    }
+
+    .fp2 a {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+/* LOGO STYLE */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    z-index: 555;
+}
+
+.logo {
+    width: 265px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 8px 0;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.navbar {
+    height: calc(100vh - 100px);
+    width: 250px;
+    margin: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EE587A;
+}
+
+.navBtn {
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.navBtn:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* HIDDEN NAV */
+.navbar.hidden {
+    display: none;
+}
+
+#fleche {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+/* __________ RESPONSIVE FOR ARROWS __________ */
+@media only screen and (max-width:900px) {
+    #fleche img {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,431 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--base-color);
+}
+
+/* __________ PRESENTATION SERVICE SECTION __________ */
+.presServices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.textPres h1 {
+    color: var(--primary-color);
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 48px;
+    text-align: center;
+    margin: 50px 100px;
+}
+
+.textPres .para {
+    display: flex;
+    justify-content: center;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+
+.p1 p {
+    height: 150px;
+    width: 600px;
+    color: var(--base-color);
+}
+
+.textPres p {
+    margin-top: 30px;
+    line-height: 2em;
+    font-weight: 200;
+}
+
+.textPres .tLight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2 p {
+    width: 1000px;
+    color: var(--base-color);
+}
+
+/* __________ PRICE __________ */
+.tarifServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tarifServices h2 {
+    color: var(--primary-color);
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 48px;
+    text-align: center;
+}
+
+.tableTarif {
+    width: 600px;
+}
+
+.tarifServices .rowHead,
+.tarifServices .col1 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: var(--primary-color) 1px solid;
+    padding: 30px;
+}
+
+.rowHead h3 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 30px;
+}
+
+.col1>p:first-child {
+    font-weight: 600;
+}
+
+/* __________ GALLERY SERVICE SECTION __________ */
+.galerieServices {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+
+.galerieServices .gal1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.galerieServices img {
+    width: 300px;
+    padding: 20px;
+}
+
+
+/* __________ TELEPHONE RESPONSIVE __________ */
+@media screen and (max-width: 480px) {
+
+    /* SERVICES PRESENTATION SECTION */
+    .textPres h1 {
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .para {
+        flex-direction: column;
+    }
+
+    .p1 {
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .p1 p {
+        height: auto;
+        width: 300px;
+    }
+
+    .p2 {
+        margin: 50px auto;
+    }
+
+    .p2 p {
+        width: 300px;
+    }
+
+    /* PRICE */
+    .tarifServices h2 {
+        font-size: 40px;
+    }
+
+    .tableTarif {
+        width: 300px;
+    }
+
+    .tarifServices .rowHead,
+    .tarifServices .col1 {
+        padding: 25px;
+    }
+
+    .rowHead h3 {
+        font-size: 28px;
+    }
+
+    /* GALLERY SECTION */
+    .galerieServices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    .galerieServices .gal1 {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .galerieServices img {
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+/* __________ TABLET RESPONSIVE __________ */
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    /* PRESENTATION SERVICE SECTION */
+    .textPres h1 {
+        font-size: 32px;
+    }
+
+    .p1 {
+        padding: 0;
+    }
+
+    .p1 p {
+        height: 500px;
+        width: 280px;
+    }
+
+    .p2 {
+        margin: 50px auto;
+    }
+
+    .p2 p {
+        width: 500px;
+    }
+
+    /* PRICE */
+    .tarifServices h2 {
+        font-size: 40px;
+    }
+
+    .tableTarif {
+        width: 480px;
+    }
+
+    .tarifServices .rowHead,
+    .tarifServices .col1 {
+        padding: 25px;
+    }
+
+    .rowHead h3 {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 28px;
+    }
+
+    /* GALLERY SERVICE SECTION */
+    .galerieServices {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .galerieServices .gal1 {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    /* PRESENTATION SERVICE SECTION */
+    .presServices {
+        margin: 50px 100px;
+    }
+
+    .textPres h1 {
+        font-size: 38px;
+    }
+
+    .p1 {
+        margin: 50px 10px;
+    }
+
+    .p1 p {
+        height: 300px;
+        width: 300px;
+    }
+
+    .p2 {
+        margin: 50px;
+    }
+
+    .p2 p {
+        width: 700px;
+    }
+
+    /* PRICE */
+    .tarifServices h2 {
+        font-size: 40px;
+    }
+
+    .tableTarif {
+        width: 600px;
+    }
+
+    .tarifServices .rowHead,
+    .tarifServices .col1 {
+        padding: 25px;
+    }
+
+    .rowHead h3 {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 28px;
+    }
+
+    /* GALLERY SERVICE SECTION */
+    .galerieServices {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .galerieServices .gal1 {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+/* __________ LAPTOP RESPONSIVE __________ */
+@media screen and (min-width: 1025px) and (max-width:1600px) {
+
+    /* PRESENTATION SERVICE SECTION */
+    .p1 {
+        margin: 20px 30px;
+    }
+
+    .p1 p {
+        height: 230px;
+        width: 450px;
+    }
+
+    .p2 {
+        margin: 50px 100px;
+    }
+
+    /* PRICE */
+    .tarifServices h2 {
+        font-size: 45px;
+    }
+
+    .tableTarif {
+        width: 600px;
+    }
+
+    .tarifServices .rowHead,
+    .tarifServices .col1 {
+        padding: 25px;
+    }
+
+    .rowHead h3 {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 28px;
+    }
+
+    /* GALLERY PRESENTATION SECTION */
+    .galerieServices {
+        padding: 50px 30px;
+    }
+
+    .galerieServices .gal1 {
+        justify-content: space-around;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+
+    /* PRESENTATION SERVICE SECTION */
+    .p1 p {
+        height: 230px;
+        width: 1000px;
+        font-size: 24px;
+    }
+
+    .p2 {
+        font-size: 24px;
+        padding: 50px;
+    }
+
+    /* PRICE */
+    .tarifServices h2 {
+        font-size: 60px;
+    }
+
+    .tableTarif {
+        width: 600px;
+        margin: 100px 0;
+    }
+
+    .tarifServices .rowHead,
+    .tarifServices .col1 {
+        padding: 25px;
+    }
+
+    .rowHead h3 {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 45px;
+    }
+
+    .tableTarif p {
+        font-size: 30px;
+    }
+}
+
+/* __________ MODAL __________ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}

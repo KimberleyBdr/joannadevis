@@ -1,0 +1,218 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+h2 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* __________ HEADER __________ */
+header {
+    background: url(../img/BGGalerie.jpg) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.text p {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+/* __________ END OF HEADER __________ */
+
+.back1 {
+    padding: 30px 0;
+}
+
+.back2 {
+    background-color: var(--text-color);
+    padding: 30px 0;
+}
+
+.back2 h2 {
+    color: var(--tertiary-color);
+}
+
+/* __________ GALLERY 1 AND 3 __________ */
+.gal1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.gal1 img {
+    width: 300px;
+    padding: 20px;
+}
+
+/* __________ GALLERY 2 AND 4 __________ */
+.gal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gal2 img {
+    width: 300px;
+    padding: 20px;
+}
+
+/* __________ END OF GALLERY __________ */
+
+
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 500px) {
+    /* __________ HEADER __________ */
+    header {
+        background: url(../img/BGGalerie1.jpg) no-repeat;
+    }
+
+    .text {
+        width: 280px;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 28px;
+    }
+
+    /* __________ GALLERY __________ */
+    .gal1 img,
+    .gal2 img {
+        width: 250px;
+        padding: 20px;
+    }
+}
+
+/* __________ TABLET RESPONSIVE __________ */
+@media screen and (min-width: 501px) and (max-width: 799px) {
+
+    /* __________ HEADER __________ */
+    .text {
+        width: 400px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 36px;
+    }
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    /* __________ HEADER __________ */
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text p {
+        font-size: 36px;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+    /* __________ HEADER __________ */
+    header {
+        background: url(../img/BGGalerie2.jpg) no-repeat;
+        height: 100vh;
+    }
+
+    .text {
+        width: 1100px;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 56px;
+    }
+
+    /* __________ GALLERY __________ */
+    .gal1 img,
+    .gal2 img {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .text h1 {
+        color: white;
+        font-size: 70px;
+        margin-top: 10%;
+    }
+
+    .juan p {
+        font-family: 'Liu Jian Mao Cao', cursive;
+        font-size: 70px;
+        margin: 0;
+    }
+}
+
+/* __________ MODAL __________ */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}

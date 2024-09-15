@@ -1,0 +1,177 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+/* __________ PRESENTATION SECTION __________ */
+.containerPres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.containerPres img {
+    width: 450px;
+    border-radius: 55px 0 55px 0;
+}
+.containerPres h2,
+.containerPres h1 {
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: var(--primary-color);
+}
+.containerPres h1 {
+    font-size: 34px;
+}
+.containerPres h2 {
+    font-size: 24px;
+}
+.textPres {
+    margin-left: 20px;
+}
+.p1 {
+    display: flex;
+    line-height: 1.8em;
+    font-weight: 200;
+}
+.p1 div {
+    width: 400px;
+    margin-left: 20px;
+    color: var(--base-color);
+}
+/* __________ END OF PRESENTATION SECTION __________ */
+
+
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 549px) {
+    /* __________ PRESENTATION SECTION __________ */
+    .quiJeSuis {
+        margin: 50px 0;
+    }
+    .containerPres {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerPres img {
+        width: 300px;
+        border-radius: 35px 0 35px 0;
+    }
+    .containerPres h1 {
+        font-size: 34px;
+    }
+    .containerPres h2 {
+        font-size: 24px;
+    }
+    .p1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .p1 div {
+        width: 300px;
+        margin-left: 10px;
+    }
+}
+
+    /* __________ TABLET RESPONSIVE __________ */
+@media screen and (min-width: 550px) and (max-width:768px) {
+    /* __________ PRESENTATION SECTION __________ */
+    .quiJeSuis {
+        margin: 50px 150px;
+    }
+    .containerPres {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerPres img {
+        width: 400px;
+        border-radius: 35px 0 35px 0;
+    }
+    .containerPres h1 {
+        font-size: 34px;
+    }
+    .containerPres h2 {
+        font-size: 24px;
+    }
+    .p1 div {
+        width: 300px;
+        margin-left: 25px;
+    }
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    /* __________ PRESENTATION RESPONSIVE __________ */
+    .quiJeSuis {
+        margin: 50px 150px;
+    }
+    .containerPres {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerPres img {
+        width: 400px;
+        border-radius: 35px 0 35px 0;
+    }
+    .containerPres h1 {
+        font-size: 34px;
+    }
+    .containerPres h2 {
+        font-size: 24px;
+    }
+    .p1 div {
+        width: 350px;
+        margin-left: 25px;
+    }
+}
+
+/* __________ LAPTOP RESPONSIVE __________ */
+@media screen and (min-width: 1025px) and (max-width:1600px){
+    /* __________ PRESENTATION SECTION __________ */
+    .quiJeSuis {
+        margin: 50px 180px;
+    }
+    .containerPres img {
+        width: 350px;
+        border-radius: 35px 0 35px 0;
+    }
+    .containerPres h1 {
+        font-size: 32px;
+    }
+    .containerPres h2 {
+        font-size: 22px;
+    }
+    .p1 div {
+        width: 350px;
+        margin-left: 25px;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+    /* __________ PRESENTATION SECTION __________ */
+    .containerPres {
+        gap: 200px;
+    }
+    .containerPres img {
+        width: 500px;
+    }
+    .containerPres h1 {
+        font-size: 44px;
+    }
+    .containerPres h2 {
+        font-size: 28px;
+    }
+    .textPres {
+        margin-left: 22px;
+    }
+    .p1 div {
+        width: 450px;
+        margin-left: 50px;
+    }
+}

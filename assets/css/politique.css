@@ -1,0 +1,51 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--base-color);
+}
+
+section {
+    margin: 100px;
+}
+h1,
+.info h2,
+section h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+.info .p {
+    line-height: 2em;
+    margin: 20px 100px;
+}
+.info a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 500px) {
+    section {
+        margin: 0;
+    }
+    .p {
+        margin: 0 100px;
+    }
+}
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+    h1,
+    h2,
+    h3 {
+        font-size: 300%;
+
+    }
+    .p {
+        font-size: 200%;
+    }
+}

@@ -1,0 +1,118 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+/* __________ HEADER __________ */
+header {
+    display: flex;
+    flex-direction: column;
+}
+/* FORM */
+.formulaire1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px var(--primary-color) solid;
+    border-radius: 50px 0;
+    width: 600px;
+    height: 480px;
+}
+form h2 {
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: 'Liu Jian Mao Cao', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+form .bouton {
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    align-content: center
+}
+
+/* STYLE FOR INPUT */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    border: var(--primary-color) 1px solid;
+}
+textarea {
+    height: 100px;
+}
+/* STYLE FOR BUTTON */
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* __________ END OF HEADER __________ */
+    
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 500px) {
+    /* FORM */
+    form {
+        width: 300px;
+        height: 480px;
+    }
+    form h2 {
+        font-size: 40px;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    /* FORM */
+    .formulaire1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+    }
+    form {
+        width: 800px;
+        height: 680px;
+    }
+    form h2 {
+        font-size: 60px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        padding: 20px;
+        margin: 20px;
+        border: var(--primary-color) 1px solid;
+    }
+
+    /* STYLE FOR BUTTON */
+    input[type="submit"] {
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+}

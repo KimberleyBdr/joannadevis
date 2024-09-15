@@ -1,0 +1,314 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+/* __________ HEADER __________ */
+header {
+    background: url(../img/BGServices.jpg) no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOMEPAGE */
+.homepageService {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.homepageService h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+.homepageService p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+.homepageService p a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* __________ SERVICE SECTION __________ */
+.service1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service1 .s1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.service1 .s1:last-child {
+    flex-direction: row-reverse;
+}
+
+.service1 .s1 img,
+.service1 .s1 .text {
+    width: 500px;
+    border-radius: 55px 0 55px 0;
+}
+
+.s1 .text {
+    padding: 20px;
+}
+
+.s1 .text h2 {
+    color: var(--primary-color);
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 30px;
+}
+
+.s1 .text p {
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: 200;
+    color: var(--base-color);
+}
+
+.s1 .text .tarif {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+/* __________ TELEPHON RESPONSIVE __________ */
+@media screen and (max-width: 500px) {
+
+    /* HEADER */
+    header {
+        background: url(../img/BGServices1.jpg) no-repeat 50% 50%;
+    }
+
+    /* HOMEPAGE */
+    .homepageService {
+        width: 305px;
+        margin: 20px;
+    }
+
+    .homepageService h1 {
+        font-size: 34px;
+        line-height: 1.5em;
+    }
+
+    .homepageService p {
+        line-height: 2.5em;
+        font-size: 16px;
+    }
+
+    .homepageService p a {
+        font-size: 16px;
+    }
+
+    /* SERVICE SECTION */
+    .services {
+        margin: 50px;
+    }
+
+    .service1 .s1 {
+        border-top: var(--primary-color) 1px solid;
+        margin: 50px 0;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .service1 .s1:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .service1 .s1 img,
+    .service1 .s1 .text {
+        width: 280px;
+    }
+
+    .s1 .text p {
+        font-size: 16px;
+    }
+}
+
+/* __________ TABLET RESPONSIVE __________ */
+@media screen and (min-width: 501px) and (max-width:768px) {
+
+    /* HEADER */
+    header {
+        background: url(../img/BGServices1.jpg) no-repeat;
+    }
+
+    /* HOMEPAGE */
+    .homepageService {
+        width: 480px;
+        margin: 0;
+    }
+
+    .homepageService h1 {
+        font-size: 48px;
+        line-height: 1.5em;
+    }
+
+    .homepageService p {
+        line-height: 2.5em;
+        font-size: 18px;
+    }
+
+    .homepageService p a {
+        font-size: 20px;
+    }
+
+    /* SERVICE SECTION */
+    .services {
+        margin: 50px;
+    }
+
+    .service1 .s1 {
+        border-top: var(--primary-color) 1px solid;
+        border-right: var(--primary-color) 1px solid;
+        border-top-right-radius: 55px;
+        margin: 80px 0;
+        gap: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .service1 .s1:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .service1 .s1 img,
+    .service1 .s1 .text {
+        width: 400px;
+        border-radius: 55px 0 55px 0;
+    }
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (min-width: 769px) and (max-width:1024px) {
+
+    /* HOMEPAGE */
+    .homepageService h1 {
+        font-size: 48px;
+        width: 450px;
+    }
+
+    .homepageService p {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .homepageService p a {
+        font-size: 20px;
+    }
+
+    /* SERVICE SECTION */
+    .services {
+        margin: 50px 100px;
+    }
+
+    .service1 .s1 {
+        border-top: var(--primary-color) 1px solid;
+        border-right: var(--primary-color) 1px solid;
+        border-top-right-radius: 55px;
+        margin: 80px 0;
+        display: flex;
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .service1 .s1:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .service1 .s1 img,
+    .service1 .s1 .text {
+        width: 500px;
+        border-radius: 55px 0 55px 0;
+    }
+}
+
+/* __________ LAPTOP RESPONSIVE __________ */
+@media screen and (min-width: 1025px) and (max-width:1600px) {
+
+    /* HOMEPAGE */
+    .homepageService h1 {
+        width: 750px;
+    }
+
+    /* SERVICE SECTION */
+    .service1 .s1 {
+        margin: 80px 0;
+    }
+
+    .service1 .s1 img,
+    .service1 .s1 .text {
+        width: 450px;
+        border-radius: 55px 0 55px 0;
+    }
+}
+
+/* __________ MAX RESPONSIVE __________ */
+@media screen and (min-width: 2000px) {
+
+    /* HEADER */
+    header {
+        background: url(../img/BGServices2.jpg) no-repeat;
+    }
+
+    /* HOMEPAGE */
+    .homepageService h1 {
+        width: 1100px;
+        font-size: 100px;
+    }
+
+    .homepageService p {
+        width: 1100px;
+        font-size: 44px;
+    }
+
+    .homepageService p a {
+        font-size: 46px;
+    }
+
+    /* SERVICE SECTION */
+    .service1 .s1 {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        align-items: center;
+        margin: 100px 0;
+    }
+
+    .service1 .s1 img,
+    .service1 .s1 .text {
+        width: 800px;
+    }
+
+    .s1 .text h2 {
+        font-size: 60px;
+    }
+
+    .s1 .text p {
+        font-size: 35px;
+    }
+
+}

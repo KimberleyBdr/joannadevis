@@ -1,0 +1,192 @@
+body {
+    font: 400 14px 'Calibri', 'Arial';
+}
+
+main {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+h1 {
+    align-self: flex-end;
+    margin: 5% 5% 2% 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+img:not(.logo img) {
+    width: 40px;
+}
+
+main section,
+.consultBD {
+    max-width: 800px;
+    width: 100%;
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+
+table * {
+    position: relative;
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+table tr th {
+    background: #EE587A;
+    color: white;
+
+}
+
+table tr {
+    height: 60px;
+    border-bottom: #EE587A 1px solid;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: center;
+    padding: 10px;
+}
+
+form:not(.form) {
+    display: inline;
+}
+
+.wMess {
+    max-width: 200px;
+    text-align: center;
+}
+
+/* __________ RESPONSIVE __________ */
+@media screen and (max-width: 35.5em) {
+    table {
+        display: block;
+    }
+
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    table tbody tr td {
+        margin-bottom: 12px;
+    }
+
+}
+
+blockquote {
+    color: white;
+    text-align: center;
+}
+
+.form {
+    width: 340px;
+    height: 350px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 #EE587A;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    position: relative
+}
+
+.form input:not(.submit) {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #EE587A;
+    margin-bottom: 20px;
+}
+
+.form input:focus {
+    border-bottom: 2px solid #EE587A
+}
+
+.form .button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.form button,
+.index,
+.ajout,
+.submit {
+    padding: 8px 12px;
+    margin: 50px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 2px solid #EE587A;
+    border-radius: 5px;
+    background: 0;
+    color: #EE587A;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.add {
+    margin-top: 30px;
+}
+
+.add a {
+    text-decoration: none;
+    color: #EE587A;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #EE587A;
+    padding: 8px 12px;
+    margin: 50px 0 0 0;
+}
+
+.form button:hover {
+    background: #EE587A;
+    color: #fff
+}
+
+.createBD, 
+.updateBD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
